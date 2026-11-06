@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>">
+    <title>Jurar Fidelidade - Game of Thrones</title>
+
+    <style>
+        /* Background da Página com Gradiente */
+        body {
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #000000 100%);
+            color: #c9d1d9;
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Div de Navegação */
+        .nav-container {
+            background-color: #1f242d;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #c9a55c;
+            border-radius: 8px;
+        }
+
+        .nav-link {
+            color: #c9a55c;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .nav-link:hover {
+            color: #ffffff;
+            transform: scale(1.05);
+        }
+
+        /* Formatação de Div com Borda, Margens, Padding e Sombra */
+        .form-container {
+            background-color: #161b22;
+            width: 70%;
+            margin: 0 auto;
+            padding: 30px;
+            border: 2px solid #c9a55c;
+            border-radius: 10px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Formatação Textual */
+        h1 {
+            color: #f0e6d2;
+            text-shadow: 2px 2px 6px #000000;
+            text-align: center;
+            font-family: 'Cinzel', 'Georgia', serif;
+            letter-spacing: 1px;
+        }
+
+        /* Formatação do Formulário e Seus Campos */
+        form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #c9a55c;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 10px;
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 5px;
+            color: #e6edf3;
+            font-family: inherit;
+        }
+
+        /* Pseudo-classe :focus para destacar o campo selecionado */
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #c9a55c;
+            box-shadow: 0 0 8px rgba(201, 165, 92, 0.5);
+        }
+
+        /* Botão com Animação/Transição e Pseudo-classe :hover */
+        .submit-btn {
+            background-color: #c9a55c;
+            color: #0d1117;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+            /* Animação / Transição */
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #e6c57d;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <!-- Link de retorno para a primeira página -->
+        <a class="nav-link" href="index.html">← Voltar para a Página Principal</a>
+    </div>
+
+    <div class="form-container">
+        <h1>Jure sua Fidelidade</h1>
+        <p style="text-align: center;">Cadastre-se para receber atualizações sobre o reino de Westeros.</p>
+
+        <!-- Formulário para Cadastro / Contato -->
+        <form action="" onsubmit="this.reset(); return false;">
+            <div class="form-group">
+                <label for="nome">Nome / Lorde:</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex: Jon Snow" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail do Corvo:</label>
+                <input type="email" id="email" name="email" placeholder="lorde@winterfell.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="casa">Escolha sua Casa de Afiliação:</label>
+                <select id="casa" name="casa">
+                    <option value="stark">Casa Stark</option>
+                    <option value="lannister">Casa Lannister</option>
+                    <option value="targaryen">Casa Targaryen</option>
+                    <option value="baratheon">Casa Baratheon</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem / Juramento:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem ao Rei..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar Juramento</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
